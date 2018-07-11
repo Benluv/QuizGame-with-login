@@ -34,3 +34,31 @@ and hit the play button (cmd-return), then you should get this on the right side
   }
 }
 ```
+
+```json
+{
+  author(firstName: "Edmond", lastName: "Jones") {
+    firstName
+    lastName
+  }
+}
+```
+
+```json
+{
+  author(firstName: "Edmond", lastName: "Jones") {
+    firstName
+    lastName
+    posts {
+      title
+      views
+    }
+  }
+}
+```
+
+```json
+query FortuneCookieQuery {
+  getFortuneCookie
+}
+```
